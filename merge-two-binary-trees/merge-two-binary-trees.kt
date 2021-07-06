@@ -33,6 +33,11 @@ class Solution {
     }
 }
 
+class TreeNode(var `val`: Int) {
+    var left: TreeNode? = null
+    var right: TreeNode? = null
+}
+
 fun main() {
     val s = Solution()
 
