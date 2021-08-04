@@ -13,3 +13,7 @@ class Solution {
         return ret
     }
 }
+
+fun main() {
+    Solution().generateParenthesis(1).forEach { v -> println("$v") }
+}
