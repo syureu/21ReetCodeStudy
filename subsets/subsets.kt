@@ -17,3 +17,7 @@ class Solution {
         return ans
     }
 }
+
+fun main() {
+    Solution().subsets(intArrayOf(1, 2, 3)).forEach { print("$it ") }
+}
