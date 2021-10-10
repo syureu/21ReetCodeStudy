@@ -20,3 +20,19 @@ class Solution {
         return dp[grid.size - 1][grid[0].size - 1]
     }
 }
+
+fun main() {
+    var input = Array(3) { IntArray(3) }
+    input[0][0] = 1
+    input[0][1] = 3
+    input[0][2] = 1
+
+    input[1][0] = 1
+    input[1][1] = 5
+    input[1][2] = 1
+
+    input[2][0] = 4
+    input[2][1] = 2
+    input[2][2] = 1
+    print(Solution().minPathSum(input))
+}
