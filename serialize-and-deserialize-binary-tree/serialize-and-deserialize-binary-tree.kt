@@ -8,6 +8,11 @@ import java.util.*
  * }
  */
 
+class TreeNode(var `val`: Int) {
+    var left: TreeNode? = null
+    var right: TreeNode? = null
+}
+
 class Codec() {
     // Encodes a URL to a shortened URL.
     private val q = LinkedList<TreeNode?>()
@@ -61,3 +66,21 @@ class Codec() {
  * var data = ser.serialize(longUrl)
  * var ans = deser.deserialize(data)
  */
+
+fun main() {
+    /*
+    val root = TreeNode(1)
+    root.left = TreeNode(2)
+    root.right = TreeNode(3)
+    root.right!!.left = TreeNode(4)
+    root.right!!.right = TreeNode(5)
+    //root.right!!.left!!.left = TreeNode(6)
+    //root.right!!.left!!.right = TreeNode(7)
+     */
+
+    var ret1 = "4,-7,-3,null,null,-9,-3,9,-7,-4,null,6,null,-6,-6,null,null,0,6,5,null,9,null,null,-1,-4,null,null,null,-2,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null"
+
+    val codec = Codec()
+    //val ret1 = codec.serialize(root)
+    val ret2 = codec.deserialize(ret1)
+}
